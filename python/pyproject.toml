@@ -6,7 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "ra-constants"
 version = "0.1.0"
 description = "Universal mathematical constants for harmonic resonance systems"
-readme = "../README.md"
 license = {text = "MIT"}
 authors = [
     {name = "Anywave Creations", email = "dev@anywavecreations.com"}
@@ -47,7 +46,7 @@ Repository = "https://github.com/anywave/ra-constants"
 Issues = "https://github.com/anywave/ra-constants/issues"
 
 [tool.setuptools.packages.find]
-where = ["."]
+include = ["ra_constants*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
