@@ -23,6 +23,7 @@ from .frequencies import (
     SCHUMANN_3RD,
     SCHUMANN_4TH,
     SCHUMANN_5TH,
+    SCHUMANN_HARMONICS,
     A432,
     A440,
     SOLFEGGIO_UT,
@@ -31,6 +32,7 @@ from .frequencies import (
     SOLFEGGIO_FA,
     SOLFEGGIO_SOL,
     SOLFEGGIO_LA,
+    SOLFEGGIO_FREQUENCIES,
     MaterialFrequency,
 )
 
@@ -60,6 +62,7 @@ __all__ = [
     "SCHUMANN_3RD",
     "SCHUMANN_4TH",
     "SCHUMANN_5TH",
+    "SCHUMANN_HARMONICS",
     "A432",
     "A440",
     "SOLFEGGIO_UT",
@@ -68,6 +71,7 @@ __all__ = [
     "SOLFEGGIO_FA",
     "SOLFEGGIO_SOL",
     "SOLFEGGIO_LA",
+    "SOLFEGGIO_FREQUENCIES",
     "MaterialFrequency",
     # Thresholds
     "HIGH_COHERENCE",

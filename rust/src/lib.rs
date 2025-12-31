@@ -9,10 +9,10 @@ pub mod thresholds;
 
 // Re-export commonly used items at crate root
 pub use frequencies::{
-    cents_difference, harmonic_of, octave_of, MaterialFrequency, MaterialProperties,
-    A432, A440, SCHUMANN_2ND, SCHUMANN_3RD, SCHUMANN_4TH, SCHUMANN_5TH,
-    SCHUMANN_FUNDAMENTAL, SCHUMANN_HARMONICS, SOLFEGGIO_FA, SOLFEGGIO_FREQUENCIES,
-    SOLFEGGIO_LA, SOLFEGGIO_MI, SOLFEGGIO_RE, SOLFEGGIO_SOL, SOLFEGGIO_UT,
+    cents_difference, harmonic_of, octave_of, MaterialFrequency, MaterialProperties, A432, A440,
+    SCHUMANN_2ND, SCHUMANN_3RD, SCHUMANN_4TH, SCHUMANN_5TH, SCHUMANN_FUNDAMENTAL,
+    SCHUMANN_HARMONICS, SOLFEGGIO_FA, SOLFEGGIO_FREQUENCIES, SOLFEGGIO_LA, SOLFEGGIO_MI,
+    SOLFEGGIO_RE, SOLFEGGIO_SOL, SOLFEGGIO_UT,
 };
 
 pub use phi::{
