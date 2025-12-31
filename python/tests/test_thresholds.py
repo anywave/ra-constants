@@ -81,10 +81,10 @@ class TestNormalizeCoherence:
 
 class TestCoherenceDelta:
     def test_positive_delta(self):
-        assert coherence_delta(0.8, 0.5) == 0.3
+        assert coherence_delta(0.8, 0.5) == pytest.approx(0.3)
 
     def test_negative_delta(self):
-        assert coherence_delta(0.5, 0.8) == -0.3
+        assert coherence_delta(0.5, 0.8) == pytest.approx(-0.3)
 
 
 class TestIsCoherenceStable:

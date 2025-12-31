@@ -81,7 +81,7 @@ impl CoherenceLevel {
     /// # Panics
     /// Panics if value is not between 0 and 1
     pub fn classify(value: f64) -> Self {
-        if value < 0.0 || value > 1.0 {
+        if !(0.0..=1.0).contains(&value) {
             panic!("Coherence must be between 0 and 1");
         }
 

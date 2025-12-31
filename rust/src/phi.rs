@@ -13,7 +13,7 @@ pub const PHI_INVERSE: f64 = 0.6180339887498949;
 pub const PHI_SQUARED: f64 = 2.618033988749895;
 
 /// Square root of 2
-pub const SQRT_2: f64 = 1.4142135623730951;
+pub const SQRT_2: f64 = std::f64::consts::SQRT_2;
 
 /// Square root of 3
 pub const SQRT_3: f64 = 1.7320508075688772;
