@@ -1,0 +1,127 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  python:
+    name: Python Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          cd python
+          pip install -e ".[dev]"
+
+      - name: Run tests
+        run: |
+          cd python
+          pytest tests/ -v --cov=ra_constants
+
+      - name: Type check
+        run: |
+          cd python
+          mypy ra_constants --ignore-missing-imports
+
+  typescript:
+    name: TypeScript Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd typescript
+          npm install
+
+      - name: Type check
+        run: |
+          cd typescript
+          npm run typecheck
+
+      - name: Build
+        run: |
+          cd typescript
+          npm run build
+
+  rust:
+    name: Rust Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Build
+        run: |
+          cd rust
+          cargo build --verbose
+
+      - name: Run tests
+        run: |
+          cd rust
+          cargo test --verbose
+
+      - name: Check formatting
+        run: |
+          cd rust
+          cargo fmt -- --check
+
+      - name: Clippy
+        run: |
+          cd rust
+          cargo clippy -- -D warnings
+
+  haskell:
+    name: Haskell Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Haskell
+        uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.4'
+          cabal-version: '3.10'
+
+      - name: Cache Cabal
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cabal/store
+            dist-newstyle
+          key: ${{ runner.os }}-cabal-${{ hashFiles('haskell/ra-constants.cabal') }}
+
+      - name: Build
+        run: |
+          cd haskell
+          cabal update
+          cabal build
+
+      - name: Run tests
+        run: |
+          cd haskell
+          cabal test

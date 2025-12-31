@@ -1,0 +1,28 @@
+[package]
+name = "ra-constants"
+version = "0.1.0"
+edition = "2021"
+authors = ["Anywave Creations <dev@anywavecreations.com>"]
+description = "Universal mathematical constants for harmonic resonance systems"
+license = "MIT"
+repository = "https://github.com/anywave/ra-constants"
+homepage = "https://github.com/anywave/ra-constants"
+documentation = "https://docs.rs/ra-constants"
+readme = "../README.md"
+keywords = ["constants", "phi", "golden-ratio", "frequencies", "coherence"]
+categories = ["mathematics", "science"]
+
+[lib]
+name = "ra_constants"
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
+
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

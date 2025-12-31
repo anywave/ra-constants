@@ -1,0 +1,50 @@
+cabal-version:      3.0
+name:               ra-constants
+version:            0.1.0
+synopsis:           Universal mathematical constants for harmonic resonance systems
+description:
+    Ra Constants provides portable mathematical constants for harmonic resonance
+    systems, including the golden ratio (phi), Schumann frequencies, material
+    resonance frequencies, and coherence thresholds.
+
+license:            MIT
+license-file:       LICENSE
+author:             Anywave Creations
+maintainer:         dev@anywavecreations.com
+copyright:          (c) 2025 Anywave Creations
+category:           Math, Science
+build-type:         Simple
+extra-doc-files:    ../README.md
+homepage:           https://github.com/anywave/ra-constants
+bug-reports:        https://github.com/anywave/ra-constants/issues
+
+source-repository head
+    type:     git
+    location: https://github.com/anywave/ra-constants
+
+library
+    exposed-modules:
+        Ra.Constants
+        Ra.Constants.Phi
+        Ra.Constants.Frequencies
+        Ra.Constants.Thresholds
+
+    build-depends:
+        base >=4.14 && <5
+
+    hs-source-dirs:   src
+    default-language: Haskell2010
+    ghc-options:      -Wall -Wcompat -Widentities -Wincomplete-uni-patterns
+                      -Wincomplete-record-updates -Wredundant-constraints
+                      -Wnoncanonical-monad-instances
+
+test-suite ra-constants-test
+    type:             exitcode-stdio-1.0
+    main-is:          Main.hs
+    hs-source-dirs:   test
+    build-depends:
+        base >=4.14 && <5,
+        ra-constants,
+        hspec >=2.7 && <3
+    default-language: Haskell2010
+    ghc-options:      -Wall -threaded -rtsopts -with-rtsopts=-N
