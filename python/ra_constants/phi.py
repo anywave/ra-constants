@@ -5,7 +5,6 @@ Mathematical constants - phi, roots, and transcendentals.
 MIT License
 """
 
-import math
 
 # Golden Ratio and derivatives
 PHI: float = 1.618033988749895

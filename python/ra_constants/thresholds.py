@@ -10,7 +10,6 @@ MIT License
 from enum import Enum
 from typing import NamedTuple
 
-
 # Generic coherence thresholds (not application-specific)
 HIGH_COHERENCE: float = 0.85
 """High coherence threshold (85%)"""
@@ -54,7 +53,7 @@ class CoherenceLevel(Enum):
         return self.value.upper
 
     @classmethod
-    def classify(cls, value: float) -> "CoherenceLevel":
+    def classify(cls, value: float) -> CoherenceLevel:
         """Classify a coherence value into a level.
 
         Args:

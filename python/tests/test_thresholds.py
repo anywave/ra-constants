@@ -1,17 +1,18 @@
 """Tests for thresholds module."""
 
 import pytest
+
 from ra_constants import (
     HIGH_COHERENCE,
-    MEDIUM_COHERENCE,
     LOW_COHERENCE,
+    MEDIUM_COHERENCE,
     MINIMUM_COHERENCE,
     CoherenceLevel,
 )
 from ra_constants.thresholds import (
-    normalize_coherence,
     coherence_delta,
     is_coherence_stable,
+    normalize_coherence,
 )
 
 

@@ -1,8 +1,9 @@
 """Tests for phi module."""
 
 import pytest
+
 from ra_constants import PHI, PHI_INVERSE, PHI_SQUARED
-from ra_constants.phi import phi_power, fibonacci_ratio, is_phi_ratio
+from ra_constants.phi import fibonacci_ratio, is_phi_ratio, phi_power
 
 
 class TestPhiConstants:

@@ -10,7 +10,6 @@ MIT License
 from enum import Enum
 from typing import NamedTuple
 
-
 # Schumann Resonances (Earth's electromagnetic resonant frequencies)
 SCHUMANN_FUNDAMENTAL: float = 7.83
 """Schumann resonance fundamental frequency (Hz)"""
@@ -112,7 +111,7 @@ class MaterialFrequency(Enum):
         return self.value.conductivity
 
     @classmethod
-    def from_name(cls, name: str) -> "MaterialFrequency":
+    def from_name(cls, name: str) -> MaterialFrequency:
         """Get material by name (case-insensitive)."""
         return cls[name.upper()]
 

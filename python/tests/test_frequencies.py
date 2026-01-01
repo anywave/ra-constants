@@ -1,15 +1,16 @@
 """Tests for frequencies module."""
 
 import pytest
+
 from ra_constants import (
-    SCHUMANN_FUNDAMENTAL,
-    SCHUMANN_HARMONICS,
     A432,
     A440,
+    SCHUMANN_FUNDAMENTAL,
+    SCHUMANN_HARMONICS,
     SOLFEGGIO_MI,
     MaterialFrequency,
 )
-from ra_constants.frequencies import octave_of, harmonic_of, cents_difference
+from ra_constants.frequencies import cents_difference, harmonic_of, octave_of
 
 
 class TestSchumannFrequencies:
