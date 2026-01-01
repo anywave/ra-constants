@@ -25,7 +25,7 @@ SCHUMANN_4TH: float = 27.3
 SCHUMANN_5TH: float = 33.8
 """Fifth Schumann harmonic (Hz)"""
 
-SCHUMANN_HARMONICS: tuple = (
+SCHUMANN_HARMONICS: tuple[float, ...] = (
     SCHUMANN_FUNDAMENTAL,
     SCHUMANN_2ND,
     SCHUMANN_3RD,
@@ -62,7 +62,7 @@ SOLFEGGIO_SOL: float = 741.0
 SOLFEGGIO_LA: float = 852.0
 """La - Returning to spiritual order"""
 
-SOLFEGGIO_FREQUENCIES: tuple = (
+SOLFEGGIO_FREQUENCIES: tuple[float, ...] = (
     SOLFEGGIO_UT,
     SOLFEGGIO_RE,
     SOLFEGGIO_MI,

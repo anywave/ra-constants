@@ -114,7 +114,7 @@ def coherence_delta(current: float, previous: float) -> float:
     return current - previous
 
 
-def is_coherence_stable(values: list, threshold: float = 0.05) -> bool:
+def is_coherence_stable(values: list[float], threshold: float = 0.05) -> bool:
     """Check if a series of coherence values is stable.
 
     Args:
