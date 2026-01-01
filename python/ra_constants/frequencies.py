@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Frequency constants - Schumann resonances, musical pitches, and material frequencies.
 

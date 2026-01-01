@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Coherence thresholds - Generic bands for coherence state classification.
 
