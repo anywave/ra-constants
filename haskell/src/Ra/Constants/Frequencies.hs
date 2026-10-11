@@ -67,7 +67,7 @@ schumannHarmonics =
   , schumann5th
   ]
 
--- | Concert pitch A at 432 Hz (natural/Verdi tuning)
+-- | Concert pitch A at 432 Hz ("Verdi tuning", alternative pitch)
 a432 :: Double
 a432 = 432.0
 
@@ -75,27 +75,27 @@ a432 = 432.0
 a440 :: Double
 a440 = 440.0
 
--- | Ut (Do) - Liberation from fear and guilt
+-- | Ut (Do) - traditional association: liberation from fear and guilt (unverified)
 solfeggioUt :: Double
 solfeggioUt = 396.0
 
--- | Re - Facilitating change, undoing situations
+-- | Re - traditional association: facilitating change (unverified)
 solfeggioRe :: Double
 solfeggioRe = 417.0
 
--- | Mi - Transformation, miracles, DNA repair
+-- | Mi - traditional association: transformation (unverified; no evidence of biological effect)
 solfeggioMi :: Double
 solfeggioMi = 528.0
 
--- | Fa - Connecting relationships, harmony
+-- | Fa - traditional association: relationships, harmony (unverified)
 solfeggioFa :: Double
 solfeggioFa = 639.0
 
--- | Sol - Awakening intuition, expression
+-- | Sol - traditional association: intuition, expression (unverified)
 solfeggioSol :: Double
 solfeggioSol = 741.0
 
--- | La - Returning to spiritual order
+-- | La - traditional association: spiritual order (unverified)
 solfeggioLa :: Double
 solfeggioLa = 852.0
 

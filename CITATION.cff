@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Ra Constants"
+abstract: "Mathematical constants and reference frequencies for harmonic-resonance modelling, with bindings for Python, TypeScript, Rust and Haskell."
+type: software
+authors:
+  - name: "Anywave Creations"
+license: MIT
+repository-code: "https://github.com/anywave/ra-constants"
+version: "0.1.0"

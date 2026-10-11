@@ -1,6 +1,6 @@
 {-|
 Module      : Ra.Constants
-Description : Universal mathematical constants for harmonic resonance systems
+Description : Mathematical constants and reference frequencies for harmonic-resonance modelling
 Copyright   : (c) 2025 Anywave Creations
 License     : MIT
 

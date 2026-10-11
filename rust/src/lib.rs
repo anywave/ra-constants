@@ -1,4 +1,4 @@
-//! Ra Constants - Universal mathematical constants for harmonic resonance systems.
+//! Ra Constants - Mathematical constants and reference frequencies for harmonic-resonance modelling.
 //!
 //! (c) 2025 Anywave Creations
 //! MIT License

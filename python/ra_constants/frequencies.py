@@ -38,7 +38,7 @@ SCHUMANN_HARMONICS: tuple[float, ...] = (
 
 # Musical Pitch Standards
 A432: float = 432.0
-"""Concert pitch A at 432 Hz (natural/Verdi tuning)"""
+"""Alternative concert pitch A at 432 Hz ("Verdi tuning")"""
 
 A440: float = 440.0
 """Concert pitch A at 440 Hz (ISO 16 standard)"""
@@ -46,22 +46,22 @@ A440: float = 440.0
 
 # Solfeggio Frequencies (ancient scale)
 SOLFEGGIO_UT: float = 396.0
-"""Ut (Do) - Liberation from fear and guilt"""
+"""Ut (Do) - traditional association: liberation from fear and guilt (unverified)"""
 
 SOLFEGGIO_RE: float = 417.0
-"""Re - Facilitating change, undoing situations"""
+"""Re - traditional association: facilitating change (unverified)"""
 
 SOLFEGGIO_MI: float = 528.0
-"""Mi - Transformation, miracles, DNA repair"""
+"""Mi - traditional association: transformation (unverified; no evidence of biological effect)"""
 
 SOLFEGGIO_FA: float = 639.0
-"""Fa - Connecting relationships, harmony"""
+"""Fa - traditional association: relationships, harmony (unverified)"""
 
 SOLFEGGIO_SOL: float = 741.0
-"""Sol - Awakening intuition, expression"""
+"""Sol - traditional association: intuition, expression (unverified)"""
 
 SOLFEGGIO_LA: float = 852.0
-"""La - Returning to spiritual order"""
+"""La - traditional association: spiritual order (unverified)"""
 
 SOLFEGGIO_FREQUENCIES: tuple[float, ...] = (
     SOLFEGGIO_UT,

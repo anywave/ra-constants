@@ -1,7 +1,7 @@
 cabal-version:      3.0
 name:               ra-constants
 version:            0.1.0
-synopsis:           Universal mathematical constants for harmonic resonance systems
+synopsis:           Mathematical constants and reference frequencies for harmonic-resonance modelling
 description:
     Ra Constants provides portable mathematical constants for harmonic resonance
     systems, including the golden ratio (phi), Schumann frequencies, material
