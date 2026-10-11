@@ -93,6 +93,30 @@ not measured acoustic or electromagnetic resonances of the bulk materials.
 | LOW_COHERENCE | 0.3 | Low coherence state |
 | MINIMUM_COHERENCE | 0.1 | Minimum detectable coherence |
 
+### Bateman's Ra-System Values (Python: `ra_constants.bateman`)
+
+Wesley H. Bateman's own constants from *The Rods of Amon Ra* (1992-1997), as printed and verified page by page by the
+lattice's TR node (2026-08/09). They are his units and ratios, not physics claims; where he borrows a physics name
+(H-Bar, Rydberg, fine structure) the value is his, not the physical constant. Exact forms are given as `Fraction`.
+
+| Name | Value | Exact form |
+|------|-------|------------|
+| Red Pi | 3.141592592... | 84823/27000 (84823 = round(π × 27000); not π) |
+| Green Pi | 3.142696805 | (20/9)√2 |
+| Blue Pi | 3.143801406 | Green Pi × r |
+| Colour ratio r | 1.000351482 | 60000√2/84823 (r² for areas, r³ for volumes) |
+| Omega | 1.005662978 | 32√2/45 |
+| Hunab | 1.0602875 | 84823/80000 |
+| H-Bar | 1.0546875 | 135/128 |
+| Ankh | 5.08938 | 3 × 84823/50000 = Red Pi × 1.62 |
+| f.s.Δ | 0.0013717421 | 1/729 |
+| Ra Rydberg | 1.09739369 | 800/729 |
+| Repitan n | n/27 | exact |
+
+The package-level `ANKH`, `RA`, `SCARAB` and `GREEN_PHI` are this package's names for powers of φ, not Bateman's
+values of the same name. Bateman's spectral values sit a constant ~545 ppm from measured hydrogen lines because he used
+his own Rydberg; that offset is his and is not corrected here.
+
 ## Usage
 
 ### Python

@@ -18,6 +18,10 @@ quartz_freq = MaterialFrequency.QUARTZ # 32768 Hz
 from mixed sources, including traditional and esoteric ones. Their labels describe the tradition a value comes from,
 not a measured physical, biological or health effect.
 
+`ra_constants.bateman` holds Wesley H. Bateman's Ra-system values (Red Pi = 84823/27000, Hunab, H-Bar, the colour
+ratio, the Rac units) as printed in *The Rods of Amon Ra* and verified page by page. They are his units, not physics
+claims.
+
 Source, other language bindings, issues and security reporting: https://github.com/anywave/ra-constants
 
 MIT License - (c) 2025 Anywave Creations.
