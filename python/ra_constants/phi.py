@@ -224,12 +224,15 @@ PHI_WEIGHTS: Dict[str, float] = {
 # RA SYSTEM NAMED CONSTANTS
 # =============================================================================
 
-# Named powers for the Ra System
+# Named powers of φ used by this package's threshold cascade. These names are this
+# package's own labels for powers of the golden ratio. They are not Bateman's Ra-system
+# values of the same name: for those (Ankh = 5.08938, the 1.62 Phi windows) see
+# ra_constants.bateman.
 GREEN_PHI: float = PHI
-"""φ¹ ≈ 1.618 - Base golden ratio (consent threshold: FULL)"""
+"""φ¹ ≈ 1.618 - Base golden ratio (consent threshold: FULL). Not Bateman's 1.62."""
 
 ANKH: float = phi_power(3)
-"""φ³ ≈ 4.236 - Cubic extension"""
+"""φ³ ≈ 4.236 - Cubic extension. This package's name for φ³, not Bateman's Ankh (5.08938)."""
 
 RA: float = phi_power(5)
 """φ⁵ ≈ 11.090 - Fifth power"""

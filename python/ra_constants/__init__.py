@@ -5,6 +5,7 @@ Ra Constants - Mathematical constants and reference frequencies for harmonic-res
 MIT License
 """
 
+from . import bateman
 from .frequencies import (
     A432,
     A440,
@@ -71,8 +72,10 @@ from .thresholds import (
     CoherenceLevel,
 )
 
-__version__ = "0.2.0"
+__version__ = "0.1.2"
 __all__ = [
+    # Bateman's Ra-system values, as printed and verified (submodule)
+    "bateman",
     # Mathematical core
     "PHI",
     "PHI_INVERSE",
