@@ -1,7 +1,7 @@
 {
   "name": "@anywave/ra-constants",
   "version": "0.1.0",
-  "description": "Universal mathematical constants for harmonic resonance systems",
+  "description": "Mathematical constants and reference frequencies for harmonic-resonance modelling",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

@@ -31,29 +31,29 @@ export const SCHUMANN_HARMONICS: readonly number[] = [
 ] as const;
 
 // Musical Pitch Standards
-/** Concert pitch A at 432 Hz (natural/Verdi tuning) */
+/** Concert pitch A at 432 Hz ("Verdi tuning", alternative pitch) */
 export const A432: number = 432.0;
 
 /** Concert pitch A at 440 Hz (ISO 16 standard) */
 export const A440: number = 440.0;
 
 // Solfeggio Frequencies (ancient scale)
-/** Ut (Do) - Liberation from fear and guilt */
+/** Ut (Do) - traditional association: liberation from fear and guilt (unverified) */
 export const SOLFEGGIO_UT: number = 396.0;
 
-/** Re - Facilitating change, undoing situations */
+/** Re - traditional association: facilitating change (unverified) */
 export const SOLFEGGIO_RE: number = 417.0;
 
-/** Mi - Transformation, miracles, DNA repair */
+/** Mi - traditional association: transformation (unverified; no evidence of biological effect) */
 export const SOLFEGGIO_MI: number = 528.0;
 
-/** Fa - Connecting relationships, harmony */
+/** Fa - traditional association: relationships, harmony (unverified) */
 export const SOLFEGGIO_FA: number = 639.0;
 
-/** Sol - Awakening intuition, expression */
+/** Sol - traditional association: intuition, expression (unverified) */
 export const SOLFEGGIO_SOL: number = 741.0;
 
-/** La - Returning to spiritual order */
+/** La - traditional association: spiritual order (unverified) */
 export const SOLFEGGIO_LA: number = 852.0;
 
 /** All Solfeggio frequencies as a tuple */

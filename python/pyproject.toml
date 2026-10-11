@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ra-constants"
 version = "0.1.0"
-description = "Universal mathematical constants for harmonic resonance systems"
+description = "Mathematical constants and reference frequencies for harmonic-resonance modelling"
+readme = "README.md"
 license = {text = "MIT"}
 authors = [
     {name = "Anywave Creations", email = "dev@anywavecreations.com"}

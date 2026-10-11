@@ -27,28 +27,28 @@ pub const SCHUMANN_HARMONICS: [f64; 5] = [
     SCHUMANN_5TH,
 ];
 
-/// Concert pitch A at 432 Hz (natural/Verdi tuning)
+/// Alternative concert pitch A at 432 Hz ("Verdi tuning")
 pub const A432: f64 = 432.0;
 
 /// Concert pitch A at 440 Hz (ISO 16 standard)
 pub const A440: f64 = 440.0;
 
-/// Ut (Do) - Liberation from fear and guilt
+/// Ut (Do) - traditional association: liberation from fear and guilt (unverified)
 pub const SOLFEGGIO_UT: f64 = 396.0;
 
-/// Re - Facilitating change, undoing situations
+/// Re - traditional association: facilitating change (unverified)
 pub const SOLFEGGIO_RE: f64 = 417.0;
 
-/// Mi - Transformation, miracles, DNA repair
+/// Mi - traditional association: transformation (unverified; no evidence of biological effect)
 pub const SOLFEGGIO_MI: f64 = 528.0;
 
-/// Fa - Connecting relationships, harmony
+/// Fa - traditional association: relationships, harmony (unverified)
 pub const SOLFEGGIO_FA: f64 = 639.0;
 
-/// Sol - Awakening intuition, expression
+/// Sol - traditional association: intuition, expression (unverified)
 pub const SOLFEGGIO_SOL: f64 = 741.0;
 
-/// La - Returning to spiritual order
+/// La - traditional association: spiritual order (unverified)
 pub const SOLFEGGIO_LA: f64 = 852.0;
 
 /// All Solfeggio frequencies

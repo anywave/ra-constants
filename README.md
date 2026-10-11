@@ -1,8 +1,12 @@
 # Ra Constants
 
-Universal mathematical constants for harmonic resonance systems.
+Mathematical constants and reference frequencies for harmonic-resonance modelling.
 
 Portable implementations for Python, TypeScript, Rust, and Haskell.
+
+> **Scope.** The mathematical constants (φ, π, e, square roots) are standard. The frequency and material tables are
+> modelling inputs collected from mixed sources, including traditional and esoteric ones. Their labels describe the
+> tradition a value comes from, not a measured physical, biological or health effect. Treat them as parameters, not facts.
 
 ## Installation
 
@@ -11,20 +15,23 @@ Portable implementations for Python, TypeScript, Rust, and Haskell.
 pip install ra-constants
 ```
 
+Only the Python package is published (PyPI). The TypeScript, Rust and Haskell bindings are not yet published to npm,
+crates.io or Hackage; build them from this repository:
+
 ### TypeScript/JavaScript
 ```bash
-npm install @anywave/ra-constants
+cd typescript && npm install && npm run build
 ```
 
 ### Rust
 ```toml
 [dependencies]
-ra-constants = "0.1"
+ra-constants = { git = "https://github.com/anywave/ra-constants" }
 ```
 
 ### Haskell
-```cabal
-build-depends: ra-constants
+```bash
+cd haskell && cabal build
 ```
 
 ## Constants
@@ -52,16 +59,19 @@ build-depends: ra-constants
 | SCHUMANN_3RD | 20.8 | Third Schumann harmonic |
 | SCHUMANN_4TH | 27.3 | Fourth Schumann harmonic |
 | SCHUMANN_5TH | 33.8 | Fifth Schumann harmonic |
-| A432 | 432.0 | Concert pitch A (natural) |
+| A432 | 432.0 | Alternative concert pitch A |
 | A440 | 440.0 | Concert pitch A (standard) |
-| SOLFEGGIO_UT | 396.0 | Liberation from fear |
-| SOLFEGGIO_RE | 417.0 | Facilitating change |
-| SOLFEGGIO_MI | 528.0 | Transformation/DNA repair |
-| SOLFEGGIO_FA | 639.0 | Connecting relationships |
-| SOLFEGGIO_SOL | 741.0 | Awakening intuition |
-| SOLFEGGIO_LA | 852.0 | Returning to spiritual order |
+| SOLFEGGIO_UT | 396.0 | Traditional association: liberation from fear |
+| SOLFEGGIO_RE | 417.0 | Traditional association: change |
+| SOLFEGGIO_MI | 528.0 | Traditional association: transformation (no evidence of biological effect) |
+| SOLFEGGIO_FA | 639.0 | Traditional association: relationships |
+| SOLFEGGIO_SOL | 741.0 | Traditional association: intuition |
+| SOLFEGGIO_LA | 852.0 | Traditional association: spiritual order |
 
 ### Material Resonance Frequencies
+
+Modelling values on a power-of-two scale (the quartz value is the common 32.768 kHz watch-crystal frequency). They are
+not measured acoustic or electromagnetic resonances of the bulk materials.
 
 | Material | Base Frequency (Hz) | Alpha Affinity | Conductivity |
 |----------|---------------------|----------------|--------------|
@@ -126,10 +136,20 @@ baseFreq = schumannFundamental
 quartzFreq = materialFrequency Quartz
 ```
 
-## License
-
-MIT License - (c) 2025 Anywave Creations
-
 ## Attribution
 
-Frequency values derived from published physics research and the Rex Research archives.
+Schumann resonance values follow published geophysics measurements. Solfeggio values and their associations come from
+popular and esoteric sources collected in the Rex Research archive; they are not established science. Material values
+are modelling choices.
+
+## Citation
+
+See [CITATION.cff](CITATION.cff).
+
+## Security
+
+See [SECURITY.md](SECURITY.md).
+
+## License
+
+MIT License - (c) 2025 Anywave Creations. See [LICENSE](LICENSE).
